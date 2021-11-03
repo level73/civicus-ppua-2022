@@ -4,5 +4,7 @@
 Civicus Monitor Annual Report Minisite
 
 content: Civicus
+
 graphics: Diego Lopez
+
 coding: Level73
