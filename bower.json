@@ -1,0 +1,26 @@
+{
+  "name": "civicus-ppua-2021",
+  "description": "",
+  "main": "index.htm",
+  "authors": [
+    "level73"
+  ],
+  "license": "GPL 3.0",
+  "keywords": [
+    ""
+  ],
+  "homepage": "https://github.com/level73/civicus-ppua-2021",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
+}
