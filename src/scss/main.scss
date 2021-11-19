@@ -1,7 +1,7 @@
 /** Main Custom CSS **/
 @import 'variables';
 @import 'fonts';
-body#homepage { display: none; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Novecento wide', sans-serif;
   font-weight: bold;
@@ -299,4 +299,46 @@ footer { padding: 40px 0px 25px;  }
 
  ul li, p { text-align: right; direction: rtl; font-size: 1.3em; }
   .offset-sm-4 { margin-right: 33.33333%; margin-left: auto !important;}
+}
+
+/** New Styles 2022 */
+footer#page-footer {
+  #footer-monitor-traffic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .monitor-traffic {
+    width: 60px;
+    height: 60px;
+    margin: 20px 5px;
+    border-radius: 30px;
+    &.light-1 { background-color: $bg_Red; }
+    &.light-2 { background-color: $bg_Orange; }
+    &.light-3 { background-color: $bg_Yellow; }
+    &.light-4 { background-color: $bg_Lightgreen; }
+    &.light-5 { background-color: $bg_Opengreen; }
+
+  }
+  #footer-grid{
+    background: #ccc;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    a.footer-grid {
+      display: block;
+      width: 100%;
+      min-height: 130px;
+      margin: 10px 0px;
+      text-align: center;
+      background: #1b1e21;
+    }
+  }
+  #colophon {
+    background: $backblack;
+    color: white;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
 }

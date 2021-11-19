@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri-Bold.eot');
+    src: url('Calibri-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Calibri-Bold.woff2') format('woff2'),
+        url('Calibri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri-Italic.eot');
+    src: url('Calibri-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Calibri-Italic.woff2') format('woff2'),
+        url('Calibri-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Novecento wide';
+    src: url('Novecentowide-Bold.eot');
+    src: url('Novecentowide-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Novecentowide-Bold.woff2') format('woff2'),
+        url('Novecentowide-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri.eot');
+    src: url('Calibri.eot?#iefix') format('embedded-opentype'),
+        url('Calibri.woff2') format('woff2'),
+        url('Calibri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Novecento wide';
+    src: url('Novecentowide-Normal.eot');
+    src: url('Novecentowide-Normal.eot?#iefix') format('embedded-opentype'),
+        url('Novecentowide-Normal.woff2') format('woff2'),
+        url('Novecentowide-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Novecento wide';
+    src: url('Novecentowide-Light.eot');
+    src: url('Novecentowide-Light.eot?#iefix') format('embedded-opentype'),
+        url('Novecentowide-Light.woff2') format('woff2'),
+        url('Novecentowide-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
