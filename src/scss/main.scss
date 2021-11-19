@@ -184,7 +184,7 @@ p { font-family: 'Calibri', sans-serif; font-size: 1.2em; }
 }
 .content { background-color: white; }
 
-footer { padding: 40px 0px 25px;  }
+footer { padding: 40px 0px 0px;  }
 
 /** Navbar **/
 .menu-toggler {
@@ -313,11 +313,18 @@ footer#page-footer {
     height: 60px;
     margin: 20px 5px;
     border-radius: 30px;
+    transition: all 0.3s ease-in-out;
     &.light-1 { background-color: $bg_Red; }
     &.light-2 { background-color: $bg_Orange; }
     &.light-3 { background-color: $bg_Yellow; }
     &.light-4 { background-color: $bg_Lightgreen; }
     &.light-5 { background-color: $bg_Opengreen; }
+    &:hover {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      margin: 10px 0px;
+    }
 
   }
   #footer-grid{
@@ -339,6 +346,48 @@ footer#page-footer {
     font-size: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-align: center;
+    a { color: yellow; text-decoration: none; &:hover { text-decoration: underline; } }
   }
+}
 
+/** Header & Nav **/
+nav#main-navbar {
+  width: 100%;
+  background: $backblack;
+  height: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  h1 {
+    position: absolute;
+    left: calc(50% - 113px);
+    margin-top: 15px;
+    font-size: 12px;
+    color: white;
+  }
+  ul {
+    padding: 0px;
+    a { color: white; }
+    &#languages {
+      padding-top: 20px; padding-bottom: 20px;
+      li {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        font-size: 12px;
+        &:not(:last-child){
+          border-right: 1px solid white;
+        }
+      }
+    }
+    & li > ul {
+      padding-left: 10px;
+    }
+    &#full-nav {
+      li {
+        padding: 4px 0px;
+      }
+    }
+  }
 }
