@@ -302,11 +302,14 @@ footer { padding: 40px 0px 0px;  }
 }
 
 /** New Styles 2022 */
+html, body { height: 100%; }
 footer#page-footer {
+  background: white;
   #footer-monitor-traffic {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
   }
   .monitor-traffic {
     width: 60px;
@@ -389,5 +392,63 @@ nav#main-navbar {
         padding: 4px 0px;
       }
     }
+  }
+}
+
+/** Region Pages **/
+body.region-page {
+  &.bg-red {
+    background-color: $bg_Red;
+  }
+
+  &.bg-orange {
+    background-color: $bg_Orange;
+  }
+
+  &.bg-yellow {
+    background-color: $bg_Yellow;
+  }
+
+  &.bg-lightgreen {
+    background-color: $bg_Lightgreen;
+  }
+
+  &.bg-opengreen {
+    background-color: $bg_Opengreen;
+  }
+
+  section.head {
+    height: 0;
+    padding-top: calc(39.87% - 60px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+
+    h1 {
+      display: none;
+    }
+
+    &#africa {
+      background-image: url('../assets/images/africa-header.jpg');
+    }
+    &#americas {
+      background-image: url('../assets/images/americas-header.jpg');
+    }
+    &#asia-pacific {
+      background-image: url('../assets/images/asia-pacific-header.jpg');
+    }
+    &#eaca {
+      background-image: url('../assets/images/eaca-header.jpg');
+    }
+    &#mena {
+      background-image: url('../assets/images/mena-header.jpg');
+    }
+  }
+
+  .content-section {
+    padding-top: 8vh;
+    padding-bottom: 12vh;
+    background: white;
   }
 }
