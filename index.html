@@ -13,7 +13,7 @@
 
         <title>Civicus Monitor 2022</title>
     </head>
-    <body>
+    <body id="homepage">
         <main>
             <nav class="navbar sticky-top" id="main-navbar">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +22,30 @@
                 <div class="collapse navbar-collapse" id="main-navigation"><!-- nav is thrown in via JS / Look at partials/navigation.html --></div>
                 <h1>PEOPLE POWER UNDER ATTACK 2021</h1>
             </nav>
+            <h1 class="main-title t-yellow">PEOPLE POWER <strong>UNDER ATTACK</strong> 2021</h1>
+            <section class="container-fluid" id="main-map">
 
+                <img id="dummymap" src="https://github.com/level73/civicus-ppua-2022/raw/main/assets/images/homepage-map.png" usemap="#image-map" width="100%">
+
+                <map name="image-map">
+                    <area target="" class="map-region" data-bg="americas" alt="Americas" title="Americas" href="americas.html" coords="672,0,167,29,48,149,151,249,329,434,455,668,546,780,606,785,658,615,716,503,596,370,562,242,672,200" shape="poly">
+                    <area target="" class="map-region" data-bg="mena" alt="Middle East &amp; North Africa" title="Middle East &amp; North Africa" href="middle-east-north-africa.html" coords="790,325,813,324,835,295,898,339,935,314,996,336,1056,324,1098,376,1183,356,1188,324,1186,290,1168,244,1132,227,1107,227,1085,227,1066,241,1051,241,1041,270,951,256,930,237,901,231,852,241" shape="poly">
+                    <area target="" class="map-region" data-bg="africa" alt="Africa" title="Africa" href="africa.html" coords="788,332,837,303,901,339,940,319,998,342,1058,325,1100,376,1164,380,1137,604,946,705,893,466,779,409" shape="poly">
+                    <area target="" class="map-region" data-bg="europe-central-asia" alt="Europe &amp; Central Asia" title="Europe &amp; Central Asia" href="europe-central-asia.html" coords="822,244,825,186,823,115,767,90,846,46,961,36,1134,3,1365,2,1577,46,1619,129,1583,181,1532,183,1500,207,1478,171,1412,142,1393,163,1305,146,1300,161,1266,164,1236,219,1202,224,1178,242,1120,220,1078,232,1049,241,1022,251,971,249,929,229" shape="poly">
+                    <area target="" class="map-region" data-bg="asia-pacific" alt="Asia &amp; Pacific" title="Asia &amp; Pacific" href="asia-pacific.html" coords="1178,259,1190,301,1221,352,1311,476,1404,544,1411,663,1521,744,1707,742,1824,571,1804,412,1684,295,1589,188,1540,178,1499,203,1478,169,1417,144,1400,166,1344,161,1310,153,1271,170,1239,220,1202,224,1178,246" shape="poly">
+                </map>
+
+                <div class="prop" id="girl-paint"></div>
+                <div class="prop" id="boy-spray"></div>
+            </section>
             <section class="container contents">
                 <div class="row">
 
                     <div class="col">
+                        <br />
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                         <h2>A wall of text for testing</h2>
+
                         <p>Human-centered, mass incarceration B-corp; sustainable social enterprise; green space disrupt natural resources circular unprecedented challenge. Innovation grit a big data empower. Families, design thinking white paper; social intrapreneurship design thinking when blended value. Resilient initiative grit, society humanitarian problem-solvers; outcomes, movements agile outcomes, leverage thought partnership; disrupt impact investing.</p>
                         <p>Deep dive gender rights big data or, vibrant mass incarceration, inclusion cultivate academic inspirational a. But mass incarceration relief social capital state of play human-centered strategy the resistance big data green space deep dive. Radical greenwashing segmentation; capacity building think tank.</p>
                         <p>Incubator, inspirational when inspiring revolutionary commitment venture philanthropy resilient dynamic. Low-hanging fruit relief targeted accessibility fairness dynamic. Improve the world empathetic activate, storytelling grit compelling youth justice the resistance accessibility. Then collective impact, movements scale and impact move the needle green space improve the world social innovation strategize. Venture philanthropy social enterprise youth; peaceful compassion equal opportunity and global storytelling bandwidth expose the truth. Systems thinking the, impact investing social capital uplift social return on investment systems thinking.</p>
@@ -51,6 +69,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="js/vendor/imageMapResizer.min.js?ts=19112021"></script>
         <script src="js/main.min.js?ts=19112021"></script>
 
         <script type="text/javascript">

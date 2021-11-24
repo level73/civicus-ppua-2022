@@ -44,6 +44,10 @@ module.exports = function(grunt) {
                         src: 'src/components/bootstrap/dist/css/bootstrap.min.css',
                         dest: 'css/vendor/bootstrap.min.css'
                     },
+                    {
+                        src: 'src/components/image-map-resizer/js/imageMapResizer.min.js',
+                        dest: 'js/vendor/imageMapResizer.min.js'
+                    },
                 ]
             }
         },

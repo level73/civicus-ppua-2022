@@ -7,6 +7,8 @@ var PPUA = {
         this.loadNav();
         this.loadFoot();
         this.headerBG();
+        this.homepageMap();
+        $('map').imageMapResize();
     },
 
     loadNav: function(){
@@ -19,6 +21,22 @@ var PPUA = {
 
         });
     },
+
+    homepageMap: function(){
+        $('.map-region').hover(
+            function(){
+                var theBG = $(this).data('bg');
+                $('#main-map').addClass(theBG);
+            },
+            function(){
+                var theBG = $(this).data('bg');
+                $('#main-map').removeClass(theBG);
+            }
+        );
+
+    },
+
+
 
     headerBG: function(){
         var bg_img = $('#main-header').data('bg');

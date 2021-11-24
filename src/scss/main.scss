@@ -358,7 +358,7 @@ footer#page-footer {
 nav#main-navbar {
   width: 100%;
   background: $backblack;
-  height: 60px;
+  height: 30px;
   padding-top: 0px;
   padding-bottom: 0px;
 
@@ -394,7 +394,59 @@ nav#main-navbar {
     }
   }
 }
+/** Homepage **/
+#homepage {
+  background: url('../assets/images/homepage-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+h1.main-title {
+  mix-blend-mode: screen;
+  font-weight: 400;
+  strong { font-weight: 900; }
+}
 
+#main-map {
+  position: relative;
+  background: url('../assets/images/map/full.png');
+  background-size: cover;
+
+  &.americas { background: url('../assets/images/map/americas.png'), url('../assets/images/map/full.png'); background-size: cover; }
+  &.mena { background: url('../assets/images/map/mena.png'), url('../assets/images/map/full.png'); background-size: cover; }
+  &.africa { background: url('../assets/images/map/africa.png'), url('../assets/images/map/full.png');  background-size: cover;}
+  &.europe-central-asia { background: url('../assets/images/map/europe-central-asia.png'), url('../assets/images/map/full.png'); background-size: cover; }
+  &.asia-pacific { background: url('../assets/images/map/asia-pacific.png'), url('../assets/images/map/full.png'); background-size: cover; }
+
+  #dummymap {
+    opacity: 0;
+    width: 100%;
+  }
+
+  .prop {
+    position: absolute;
+    &#girl-paint {
+      left: 35%;
+      bottom: -26%;
+      width: 13.5%;
+      height: 49.9%;
+      background: url('../assets/images/girl-paint.png');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &#boy-spray {
+      left: 64%;
+      bottom: -11%;
+      width: 9.98%;
+      height: 33.56%;
+      background: url('../assets/images/boy-spray.png');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}
 /** Region Pages **/
 body.region-page {
   &.bg-red {

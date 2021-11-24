@@ -416,7 +416,7 @@ footer#page-footer {
 nav#main-navbar {
   width: 100%;
   background: #242424;
-  height: 60px;
+  height: 30px;
   padding-top: 0px;
   padding-bottom: 0px; }
   nav#main-navbar h1 {
@@ -445,6 +445,62 @@ nav#main-navbar {
       padding-left: 10px; }
     nav#main-navbar ul#full-nav li {
       padding: 4px 0px; }
+
+/** Homepage **/
+#homepage {
+  background: url("../assets/images/homepage-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+h1.main-title {
+  mix-blend-mode: screen;
+  font-weight: 400; }
+  h1.main-title strong {
+    font-weight: 900; }
+
+#main-map {
+  position: relative;
+  background: url("../assets/images/map/full.png");
+  background-size: cover; }
+  #main-map.americas {
+    background: url("../assets/images/map/americas.png"), url("../assets/images/map/full.png");
+    background-size: cover; }
+  #main-map.mena {
+    background: url("../assets/images/map/mena.png"), url("../assets/images/map/full.png");
+    background-size: cover; }
+  #main-map.africa {
+    background: url("../assets/images/map/africa.png"), url("../assets/images/map/full.png");
+    background-size: cover; }
+  #main-map.europe-central-asia {
+    background: url("../assets/images/map/europe-central-asia.png"), url("../assets/images/map/full.png");
+    background-size: cover; }
+  #main-map.asia-pacific {
+    background: url("../assets/images/map/asia-pacific.png"), url("../assets/images/map/full.png");
+    background-size: cover; }
+  #main-map #dummymap {
+    opacity: 0;
+    width: 100%; }
+  #main-map .prop {
+    position: absolute; }
+    #main-map .prop#girl-paint {
+      left: 35%;
+      bottom: -26%;
+      width: 13.5%;
+      height: 49.9%;
+      background: url("../assets/images/girl-paint.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    #main-map .prop#boy-spray {
+      left: 64%;
+      bottom: -11%;
+      width: 9.98%;
+      height: 33.56%;
+      background: url("../assets/images/boy-spray.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat; }
 
 /** Region Pages **/
 body.region-page.bg-red {

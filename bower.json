@@ -21,6 +21,7 @@
   "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "image-map-resizer": "3",
   }
 }
