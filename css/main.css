@@ -448,21 +448,33 @@ nav#main-navbar {
 
 /** Homepage **/
 #homepage {
-  background: url("../assets/images/homepage-background.jpg");
+  background: url("../assets/images/homepage-background-full.jpg") center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top; }
+  background-repeat: no-repeat; }
 
 h1.main-title {
   mix-blend-mode: screen;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 1.8em;
+  display: none; }
   h1.main-title strong {
     font-weight: 900; }
+  @media (min-width: 1172px) {
+    h1.main-title {
+      display: block;
+      font-size: 4em; } }
+  @media (min-width: 768px) {
+    h1.main-title {
+      display: block; } }
 
 #main-map {
   position: relative;
   background: url("../assets/images/map/full.png");
   background-size: cover; }
+  @media (max-width: 576px) {
+    #main-map {
+      margin-top: 48px; } }
   #main-map.americas {
     background: url("../assets/images/map/americas.png"), url("../assets/images/map/full.png");
     background-size: cover; }
@@ -501,6 +513,41 @@ h1.main-title {
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat; }
+
+#interactives {
+  position: relative;
+  max-height: 268vh;
+  padding-top: 268vh; }
+  #interactives #country-rating-changes {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 4%;
+    width: 35.625%; }
+  #interactives #in-numbers {
+    display: block;
+    position: absolute;
+    left: 64%;
+    top: 31%;
+    width: 35.625%; }
+  #interactives #journalist {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 37%;
+    width: 35.625%; }
+  #interactives #top-violations {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    width: 35.625%; }
+  #interactives #bright-spots {
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 35.625%; }
 
 /** Region Pages **/
 body.region-page.bg-red {

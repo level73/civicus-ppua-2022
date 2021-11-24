@@ -396,18 +396,32 @@ nav#main-navbar {
 }
 /** Homepage **/
 #homepage {
-  background: url('../assets/images/homepage-background.jpg');
+  background:  url('../assets/images/homepage-background-full.jpg') center top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
 }
 h1.main-title {
   mix-blend-mode: screen;
   font-weight: 400;
+  margin-top: 10px;
+  font-size: 1.8em;
+  display: none;
+
   strong { font-weight: 900; }
+
+  @media (min-width: 1172px){
+    display: block;
+    font-size: 4em;
+  }
+  @media (min-width: 768px){
+    display: block;
+  }
 }
 
 #main-map {
+  @media (max-width: 576px){
+    margin-top: 48px;
+  }
   position: relative;
   background: url('../assets/images/map/full.png');
   background-size: cover;
@@ -446,6 +460,51 @@ h1.main-title {
       background-repeat: no-repeat;
     }
   }
+}
+#interactives {
+  position: relative;
+  max-height: 268vh;
+  padding-top: 268vh;
+
+  #country-rating-changes {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 4%;
+    width: 35.625%;
+
+  }
+  #in-numbers {
+    display: block;
+    position: absolute;
+    left: 64%;
+    top: 31%;
+    width: 35.625%;
+  }
+
+  #journalist {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 37%;
+    width: 35.625%;
+  }
+
+  #top-violations {
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    width: 35.625%;
+  }
+  #bright-spots {
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 35.625%;
+  }
+
 }
 /** Region Pages **/
 body.region-page {
