@@ -448,7 +448,7 @@ nav#main-navbar {
 
 /** Homepage **/
 #homepage {
-  background: url("../assets/images/homepage-background-full.jpg") center top;
+  background: url("../assets/images/homepage-full-animation.gif") center top, url("../assets/images/homepage-background.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -516,37 +516,35 @@ h1.main-title {
 
 #interactives {
   position: relative;
-  max-height: 268vh;
-  padding-top: 268vh; }
+  max-height: 286vh;
+  padding-top: 286vh; }
   #interactives #country-rating-changes {
     display: block;
     position: absolute;
     right: 0%;
     top: 4%;
-    width: 35.625%; }
+    width: 35.625%;
+    height: 31%; }
   #interactives #in-numbers {
     display: block;
     position: absolute;
-    left: 64%;
-    top: 31%;
-    width: 35.625%; }
-  #interactives #journalist {
-    display: block;
-    position: absolute;
-    left: 0%;
-    top: 37%;
-    width: 35.625%; }
+    left: 55%;
+    top: 46%;
+    width: 35.625%;
+    height: 31%; }
   #interactives #top-violations {
     display: block;
     position: absolute;
     left: 0%;
     top: 25%;
-    width: 35.625%; }
+    height: 25%;
+    width: 54.625%; }
   #interactives #bright-spots {
     display: block;
     position: absolute;
     left: 0%;
     bottom: 0%;
+    height: 31%;
     width: 35.625%; }
 
 /** Region Pages **/
