@@ -423,10 +423,10 @@ h1.main-title {
     margin-top: 48px;
   }
   position: relative;
-  background: url('../assets/images/map/full.png');
+  background: url('../assets/images/map/full-color.png');
   background-size: cover;
 
-  &.americas { background: url('../assets/images/map/americas.png'), url('../assets/images/map/full.png'); background-size: cover; }
+  &.americas { background: url('../assets/images/map/americas.png') , url('../assets/images/map/full.png'); background-size: cover; }
   &.mena { background: url('../assets/images/map/mena.png'), url('../assets/images/map/full.png'); background-size: cover; }
   &.africa { background: url('../assets/images/map/africa.png'), url('../assets/images/map/full.png');  background-size: cover;}
   &.europe-central-asia { background: url('../assets/images/map/europe-central-asia.png'), url('../assets/images/map/full.png'); background-size: cover; }

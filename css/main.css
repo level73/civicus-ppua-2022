@@ -470,7 +470,7 @@ h1.main-title {
 
 #main-map {
   position: relative;
-  background: url("../assets/images/map/full.png");
+  background: url("../assets/images/map/full-color.png");
   background-size: cover; }
   @media (max-width: 576px) {
     #main-map {
