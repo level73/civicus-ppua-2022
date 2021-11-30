@@ -396,7 +396,7 @@ nav#main-navbar {
 }
 /** Homepage **/
 #homepage {
-  background:  url('../assets/images/homepage-full-animation.gif') center top, url('../assets/images/homepage-background.jpg') center top;
+  background:  url('../assets/images/homepage-animation-full.gif') center top, url('../assets/images/homepage-background.jpg') center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -464,8 +464,8 @@ h1.main-title {
 #interactives {
 
   position: relative;
-  max-height: 286vh;
-  padding-top: 286vh;
+  max-height: 268vh;
+  padding-top: 268vh;
 
   #country-rating-changes {
     display: block;
@@ -479,7 +479,7 @@ h1.main-title {
     display: block;
     position: absolute;
     left: 55%;
-    top: 46%;
+    top: 40%;
     width: 35.625%;
     height: 31%;
   }
