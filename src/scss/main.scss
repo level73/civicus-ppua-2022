@@ -437,29 +437,7 @@ h1.main-title {
     width: 100%;
   }
 
-  .prop {
-    position: absolute;
-    &#girl-paint {
-      left: 35%;
-      bottom: -26%;
-      width: 13.5%;
-      height: 49.9%;
-      background: url('../assets/images/girl-paint.png');
-      background-size: contain;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-    &#boy-spray {
-      left: 64%;
-      bottom: -11%;
-      width: 9.98%;
-      height: 33.56%;
-      background: url('../assets/images/boy-spray.png');
-      background-size: contain;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-  }
+
 }
 #interactives {
 
@@ -561,3 +539,4 @@ body.region-page {
     background: white;
   }
 }
+// p.intro { font-size: 1.4em; line-height: 180%; color: #343a40; font-weight: 300; }
