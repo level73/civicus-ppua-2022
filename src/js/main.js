@@ -8,7 +8,7 @@ var PPUA = {
         this.loadFoot();
         this.headerBG();
         this.homepageMap();
-        $('map').imageMapResize();
+
     },
 
     loadNav: function(){
@@ -23,6 +23,11 @@ var PPUA = {
     },
 
     homepageMap: function(){
+        if($('#homepage').length > 0){
+            $('map').imageMapResize();
+        }
+
+
         $('.map-region').hover(
             function(){
                 var theBG = $(this).data('bg');
@@ -55,4 +60,5 @@ var PPUA = {
 
 $(document).ready(function(){
     PPUA.init();
+    $('body').scrollspy({ target: '#sidebar-nav-region' })
 });

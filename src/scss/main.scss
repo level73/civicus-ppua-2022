@@ -447,7 +447,7 @@ h1.main-title {
 
   position: relative;
   max-height: 268vh;
-  padding-top: 268vh;
+  padding-top: 136%;
 
   #country-rating-changes {
     display: block;
@@ -496,6 +496,7 @@ h1.main-title {
 }
 /** Region Pages **/
 body.region-page {
+  position: relative;
   &.bg-red {
     background-color: $bg_Red;
   }
@@ -518,7 +519,7 @@ body.region-page {
 
   section.head {
     height: 0;
-    padding-top: calc(39.87% - 60px);
+    padding-top: calc(39.87% - 30px);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
@@ -546,7 +547,7 @@ body.region-page {
   }
 
   .content-section {
-    padding-top: 8vh;
+  //  padding-top: 8vh;
     padding-bottom: 12vh;
     background: white;
   }
@@ -554,3 +555,19 @@ body.region-page {
 
 #recommendations li { font-size: 1.6em; line-height: 160%;}
 // p.intro { font-size: 1.4em; line-height: 180%; color: #343a40; font-weight: 300; }
+
+#sidebar-nav-region a {
+  text-align: center;
+  color: $repressed_orange;
+  font-family: "Novecento wide";
+  &:hover { background-color: fade-out($backblack, 0.5); color: white; }
+  &.active { background-color: $backblack; border-color: $backblack; }
+}
+#sidebar-nav-region.sticky-top{
+  top: 30px;
+}
+/*.list-group-horizontal>.list-group-item+.list-group-item { border-width: 0px !important; }
+.list-group-flush>.list-group-item { border-width: 0px !important; } */
+.list-group-horizontal>.list-group-item { border-radius: 0px !important; }
+
+.region-page h2 {padding-top: 90px; }
