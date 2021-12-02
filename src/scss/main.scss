@@ -331,6 +331,9 @@ footer#page-footer {
 
   }
   #footer-grid{
+    #hp-link {
+      padding: 20px 0px 30px;
+    }
     background: #ccc;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -478,6 +481,14 @@ h1.main-title {
     height: 31%;
     width: 35.625%;
   }
+  #civic-space-restrictions {
+    display: block;
+    position: absolute;
+    right: 8%;
+    bottom: 0%;
+    height: 31%;
+    width: 35.625%;
+  }
 
 
 
@@ -539,4 +550,6 @@ body.region-page {
     background: white;
   }
 }
+
+#recommendations li { font-size: 1.6em; line-height: 160%;}
 // p.intro { font-size: 1.4em; line-height: 180%; color: #343a40; font-weight: 300; }

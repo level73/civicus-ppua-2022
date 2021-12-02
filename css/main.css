@@ -392,6 +392,8 @@ footer#page-footer {
     background: #ccc;
     padding-top: 30px;
     padding-bottom: 40px; }
+    footer#page-footer #footer-grid #hp-link {
+      padding: 20px 0px 30px; }
     footer#page-footer #footer-grid a.footer-grid {
       display: block;
       width: 100%;
@@ -526,6 +528,13 @@ h1.main-title {
     bottom: 0%;
     height: 31%;
     width: 35.625%; }
+  #interactives #civic-space-restrictions {
+    display: block;
+    position: absolute;
+    right: 8%;
+    bottom: 0%;
+    height: 31%;
+    width: 35.625%; }
 
 /** Region Pages **/
 body.region-page.bg-red {
@@ -561,5 +570,9 @@ body.region-page .content-section {
   padding-top: 8vh;
   padding-bottom: 12vh;
   background: white; }
+
+#recommendations li {
+  font-size: 1.6em;
+  line-height: 160%; }
 
 /*# sourceMappingURL=main.css.map */
