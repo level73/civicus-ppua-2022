@@ -12,11 +12,11 @@ var PPUA = {
     },
 
     loadNav: function(){
-        $('#main-navigation').load('partials/navigation.html');
+        $('#main-navigation').load('/partials/navigation.html');
     },
 
     loadFoot: function(){
-        $('#page-footer').load('partials/footer.html', function(){
+        $('#page-footer').load('/partials/footer.html', function(){
             $('[data-toggle="tooltip"]').tooltip();
 
         });

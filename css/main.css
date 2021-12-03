@@ -50,6 +50,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 50%;
     color: #343a40; }
 
+h2.byline {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px; }
+
+ul {
+  margin-bottom: 30px; }
+  ul li {
+    font-size: 1.2em; }
+
 .content-page .container-fluid.bg-red {
   background-color: #e72932; }
 .content-page .container-fluid.bg-orange {
@@ -579,10 +589,13 @@ body.region-page {
   font-size: 1.6em;
   line-height: 160%; }
 
+@media (max-width: 576px) {
+  #sidebar-nav-region {
+    display: none; } }
 #sidebar-nav-region a {
   text-align: center;
   color: #e46c16;
-  font-family: "Novecento wide"; }
+  font-family: "Novecento wide", sans-serif; }
   #sidebar-nav-region a:hover {
     background-color: rgba(36, 36, 36, 0.5);
     color: white; }
@@ -600,5 +613,12 @@ body.region-page {
 
 .region-page h2 {
   padding-top: 90px; }
+
+p.synopsis {
+  font-size: 1.6em;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 25px; }
 
 /*# sourceMappingURL=main.css.map */
