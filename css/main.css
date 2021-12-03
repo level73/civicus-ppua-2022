@@ -55,9 +55,9 @@ h2.byline {
   text-align: center;
   margin-bottom: 50px; }
 
-ul {
+article ul {
   margin-bottom: 30px; }
-  ul li {
+  article ul li {
     font-size: 1.2em; }
 
 .content-page .container-fluid.bg-red {
@@ -620,5 +620,20 @@ p.synopsis {
   text-align: center;
   margin-bottom: 30px;
   padding: 0 25px; }
+
+img.top-5-img {
+  max-width: 60%;
+  height: auto;
+  text-align: right;
+  float: right; }
+
+.embed-responsive-map {
+  margin-bottom: 30px; }
+
+.embed-responsive-map::before {
+  padding-top: 32%; }
+  @media (max-width: 572px) {
+    .embed-responsive-map::before {
+      padding-top: 156%; } }
 
 /*# sourceMappingURL=main.css.map */

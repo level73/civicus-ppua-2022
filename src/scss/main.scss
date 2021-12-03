@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 h2.byline { font-weight: 400; text-align: center;
 margin-bottom: 50px;
 }
-ul { margin-bottom: 30px; li { font-size: 1.2em; } }
+article ul { margin-bottom: 30px; li { font-size: 1.2em; } }
 .content-page .container-fluid {
   &.bg-red { background-color: $bg_Red; }
   &.bg-orange { background-color: $bg_Orange; }
@@ -590,3 +590,11 @@ body.region-page {
   .region-page h2 {padding-top: 90px; }
 
   p.synopsis { font-size: 1.6em; line-height: 150%; text-align: center; margin-bottom: 30px; padding: 0 25px; }
+  img.top-5-img { max-width: 60%; height: auto; text-align: right; float: right; }
+.embed-responsive-map { margin-bottom: 30px; }
+.embed-responsive-map::before {
+  padding-top: 32%;
+  @media (max-width: 572px){
+    padding-top: 156%;
+  }
+}
