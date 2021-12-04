@@ -694,6 +694,10 @@ section.container a, article a {
     background: url("/assets/images/country-banners/singapore.png") no-repeat center center; }
   .country-banner#south-africa-header {
     background: url("/assets/images/country-banners/south-africa.png") no-repeat center center; }
+  .country-banner#mali-header {
+    background: url("/assets/images/country-banners/mali.png") no-repeat center center; }
+  .country-banner#solomon-islands-header {
+    background: url("/assets/images/country-banners/solomon-islands.png") no-repeat center center; }
 
 /** other headers **/
 section.head {
@@ -804,5 +808,15 @@ section.head {
     .grid-nav.south-africa:hover {
       background-blend-mode: normal;
       background-image: url("/assets/images/country-banners/south-africa.png"); }
+  .grid-nav.mali {
+    background-image: linear-gradient(#242424, #242424), url("/assets/images/country-banners/mali.png"); }
+    .grid-nav.mali:hover {
+      background-blend-mode: normal;
+      background-image: url("/assets/images/country-banners/mali.png"); }
+  .grid-nav.solomon-islands {
+    background-image: linear-gradient(#242424, #242424), url("/assets/images/country-banners/solomon-islands.png"); }
+    .grid-nav.solomon-islands:hover {
+      background-blend-mode: normal;
+      background-image: url("/assets/images/country-banners/solomon-islands.png"); }
 
 /*# sourceMappingURL=main.css.map */

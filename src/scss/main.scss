@@ -665,6 +665,12 @@ section.container, article {
   &#south-africa-header {
     background: url('/assets/images/country-banners/south-africa.png') no-repeat center center;
   }
+  &#mali-header {
+    background: url('/assets/images/country-banners/mali.png') no-repeat center center;
+  }
+  &#solomon-islands-header {
+    background: url('/assets/images/country-banners/solomon-islands.png') no-repeat center center;
+  }
 }
 /** other headers **/
 section.head {
@@ -819,5 +825,21 @@ section.head {
       background-image:  url('/assets/images/country-banners/south-africa.png');
     }
   }
+
+  &.mali {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/mali.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/mali.png');
+    }
+  }
+  &.solomon-islands {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/solomon-islands.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/solomon-islands.png');
+    }
+  }
+
 
 }
