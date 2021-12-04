@@ -819,4 +819,7 @@ section.head {
       background-blend-mode: normal;
       background-image: url("/assets/images/country-banners/solomon-islands.png"); }
 
+#world-map {
+  background: #242424; }
+
 /*# sourceMappingURL=main.css.map */
