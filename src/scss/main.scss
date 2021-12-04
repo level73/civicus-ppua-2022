@@ -407,6 +407,8 @@ nav#main-navbar {
   background:  url('../assets/images/homepage-animation-full.gif') center top, url('../assets/images/homepage-background.jpg') center top;
   background-size: cover;
   background-repeat: no-repeat;
+
+  .menu-toggler { margin-top: 40px; }
 }
 h1.main-title {
   mix-blend-mode: screen;
@@ -596,5 +598,24 @@ body.region-page {
   padding-top: 32%;
   @media (max-width: 572px){
     padding-top: 156%;
+  }
+}
+
+section.container, article {
+  a { color: $bg-Orange;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+/** Country Rating Headers **/
+.country-banner {
+  //padding: 0;
+  // background-size: cover;
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-bottom: 30px;
+  &#belarus-header {
+    background: url('/assets/images/country-banners/belarus.png') no-repeat center center;
   }
 }
