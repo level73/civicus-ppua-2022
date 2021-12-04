@@ -652,4 +652,31 @@ section.container a, article a {
   .country-banner#belarus-header {
     background: url("/assets/images/country-banners/belarus.png") no-repeat center center; }
 
+/** other headers **/
+section.head {
+  height: 0;
+  padding-top: calc(39.87% - 30px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed; }
+  section.head h1 {
+    display: none; }
+  section.head#about {
+    background-image: url("/assets/images/about-header.jpg"); }
+  section.head#methodology {
+    background-image: url("/assets/images/methodology-header.jpg"); }
+  section.head#civic-space {
+    background-image: url("/assets/images/covid-civic-space-header.jpg"); }
+  section.head#in-numbers {
+    background-image: url("/assets/images/in-numbers-header.jpg"); }
+  section.head#top-violations {
+    background-image: url("/assets/images/top-violations-header.jpg"); }
+  section.head#uneven-crisis {
+    background-image: url("/assets/images/uneven-crisis-header.jpg"); }
+  section.head#bright-spots {
+    background-image: url("/assets/images/bright-spots-header.jpg"); }
+  section.head#recommendations {
+    background-image: url("/assets/images/recommendations-header.jpg"); }
+
 /*# sourceMappingURL=main.css.map */

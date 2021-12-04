@@ -559,6 +559,7 @@ body.region-page {
   }
 }
 
+
 #recommendations li { font-size: 1.6em; line-height: 160%;}
 // p.intro { font-size: 1.4em; line-height: 180%; color: #343a40; font-weight: 300; }
 
@@ -608,6 +609,8 @@ section.container, article {
 }
 
 /** Country Rating Headers **/
+
+
 .country-banner {
   //padding: 0;
   // background-size: cover;
@@ -618,4 +621,43 @@ section.container, article {
   &#belarus-header {
     background: url('/assets/images/country-banners/belarus.png') no-repeat center center;
   }
+}
+/** other headers **/
+section.head {
+  height: 0;
+  padding-top: calc(39.87% - 30px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+
+  h1 {
+    display: none;
+  }
+
+  &#about {
+    background-image: url('/assets/images/about-header.jpg');
+  }
+  &#methodology {
+    background-image: url('/assets/images/methodology-header.jpg');
+  }
+  &#civic-space {
+    background-image: url('/assets/images/covid-civic-space-header.jpg');
+  }
+  &#in-numbers {
+    background-image: url('/assets/images/in-numbers-header.jpg');
+  }
+  &#top-violations {
+    background-image: url('/assets/images/top-violations-header.jpg');
+  }
+  &#uneven-crisis {
+    background-image: url('/assets/images/uneven-crisis-header.jpg');
+  }
+  &#bright-spots {
+    background-image: url('/assets/images/bright-spots-header.jpg');
+  }
+  &#recommendations {
+    background-image: url('/assets/images/recommendations-header.jpg');
+  }
+
 }
