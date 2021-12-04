@@ -348,7 +348,20 @@ footer#page-footer {
       min-height: 130px;
       margin: 10px 0px;
       text-align: center;
-      background: #1b1e21;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      font-size: 0;
+
+      &.methodology { background-image: url('/assets/images/methodology-header.jpg'); }
+      &.in-numbers { background-image: url('/assets/images/in-numbers-header.jpg');}
+      &.downward-spiral { background-image: url('/assets/images/covid-civic-space-header.jpg');}
+      &.uneven-crisis { background-image: url('/assets/images/uneven-crisis-header.jpg');}
+      &.bright-spots { background-image: url('/assets/images/bright-spots-header.jpg');}
+      &.top-violations { background-image: url('/assets/images/top-violations-header.jpg');}
+      &.recommendations { background-image: url('/assets/images/recommendations-header.jpg');}
+      &.about { background-image: url('/assets/images/about-header.jpg');}
+      &.in-numbers { background-image: url('/assets/images/in-numbers-header.jpg');}
     }
   }
   #colophon {
@@ -612,8 +625,6 @@ section.container, article {
 
 
 .country-banner {
-  //padding: 0;
-  // background-size: cover;
   color: white;
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -658,6 +669,34 @@ section.head {
   }
   &#recommendations {
     background-image: url('/assets/images/recommendations-header.jpg');
+  }
+
+}
+#grid-nav-wrapper { background-color: $backblack; margin-bottom: 30px; padding-top: 20px; padding-bottom: 20px; }
+.grid-nav {
+  display: block;
+  min-height: 25vh;
+  line-height: 25vh;
+  text-align: center;
+  font-family: "Novecento wide", sans-serif;
+  text-transform: upeprcase;
+  font-weight: 900;
+  color: white !important;
+  font-size: 1.4em;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+
+  &.belarus {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/belarus.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/belarus.png');
+    }
   }
 
 }

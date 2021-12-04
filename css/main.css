@@ -413,7 +413,28 @@ footer#page-footer {
       min-height: 130px;
       margin: 10px 0px;
       text-align: center;
-      background: #1b1e21; }
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      font-size: 0; }
+      footer#page-footer #footer-grid a.footer-grid.methodology {
+        background-image: url("/assets/images/methodology-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.in-numbers {
+        background-image: url("/assets/images/in-numbers-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.downward-spiral {
+        background-image: url("/assets/images/covid-civic-space-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.uneven-crisis {
+        background-image: url("/assets/images/uneven-crisis-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.bright-spots {
+        background-image: url("/assets/images/bright-spots-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.top-violations {
+        background-image: url("/assets/images/top-violations-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.recommendations {
+        background-image: url("/assets/images/recommendations-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.about {
+        background-image: url("/assets/images/about-header.jpg"); }
+      footer#page-footer #footer-grid a.footer-grid.in-numbers {
+        background-image: url("/assets/images/in-numbers-header.jpg"); }
   footer#page-footer #colophon {
     background: #242424;
     color: white;
@@ -678,5 +699,33 @@ section.head {
     background-image: url("/assets/images/bright-spots-header.jpg"); }
   section.head#recommendations {
     background-image: url("/assets/images/recommendations-header.jpg"); }
+
+#grid-nav-wrapper {
+  background-color: #242424;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.grid-nav {
+  display: block;
+  min-height: 25vh;
+  line-height: 25vh;
+  text-align: center;
+  font-family: "Novecento wide", sans-serif;
+  text-transform: upeprcase;
+  font-weight: 900;
+  color: white !important;
+  font-size: 1.4em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: saturation; }
+  .grid-nav.belarus {
+    background-image: linear-gradient(#242424, #242424), url("/assets/images/country-banners/belarus.png"); }
+    .grid-nav.belarus:hover {
+      background-blend-mode: normal;
+      background-image: url("/assets/images/country-banners/belarus.png"); }
 
 /*# sourceMappingURL=main.css.map */
