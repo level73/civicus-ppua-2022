@@ -25,6 +25,7 @@ var PPUA = {
     homepageMap: function(){
         if($('#homepage').length > 0){
             $('map').imageMapResize();
+            $('#hp_infobox').modal('show');
         }
 
 

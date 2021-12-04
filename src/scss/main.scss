@@ -632,6 +632,39 @@ section.container, article {
   &#belarus-header {
     background: url('/assets/images/country-banners/belarus.png') no-repeat center center;
   }
+  &#belgium-header {
+    background: url('/assets/images/country-banners/belgium.png') no-repeat center center;
+  }
+  &#botswana-header {
+    background: url('/assets/images/country-banners/botswana.png') no-repeat center center;
+  }
+  &#czech-republic-header {
+    background: url('/assets/images/country-banners/czech-republic.png') no-repeat center center;
+  }
+  &#haiti-header {
+    background: url('/assets/images/country-banners/haiti.png') no-repeat center center;
+  }
+  &#jordan-header {
+    background: url('/assets/images/country-banners/jordan.png') no-repeat center center;
+  }
+  &#mongolia-header {
+    background: url('/assets/images/country-banners/mongolia.png') no-repeat center center;
+  }
+  &#mozambique-header {
+    background: url('/assets/images/country-banners/mozambique.png') no-repeat center center;
+  }
+  &#nicaragua-header {
+    background: url('/assets/images/country-banners/nicaragua.png') no-repeat center center;
+  }
+  &#poland-header {
+    background: url('/assets/images/country-banners/poland.png') no-repeat center center;
+  }
+  &#singapore-header {
+    background: url('/assets/images/country-banners/singapore.png') no-repeat center center;
+  }
+  &#south-africa-header {
+    background: url('/assets/images/country-banners/south-africa.png') no-repeat center center;
+  }
 }
 /** other headers **/
 section.head {
@@ -696,6 +729,94 @@ section.head {
     &:hover {
       background-blend-mode: normal;
       background-image:  url('/assets/images/country-banners/belarus.png');
+    }
+  }
+
+  &.belgium {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/belgium.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/belgium.png');
+    }
+  }
+
+  &.botswana {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/botswana.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/botswana.png');
+    }
+  }
+
+  &.czech-republic {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/czech-republic.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/czech-republic.png');
+    }
+  }
+
+  &.haiti {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/haiti.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/haiti.png');
+    }
+  }
+
+  &.jordan {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/jordan.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/jordan.png');
+    }
+  }
+
+  &.mongolia {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/mongolia.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/mongolia.png');
+    }
+  }
+
+  &.mozambique {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/mozambique.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/mozambique.png');
+    }
+  }
+
+  &.nicaragua {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/nicaragua.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/nicaragua.png');
+    }
+  }
+
+  &.poland {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/poland.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/poland.png');
+    }
+  }
+
+  &.singapore {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/singapore.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/singapore.png');
+    }
+  }
+
+  &.south-africa {
+    background-image: linear-gradient($backblack, $backblack), url('/assets/images/country-banners/south-africa.png');
+    &:hover {
+      background-blend-mode: normal;
+      background-image:  url('/assets/images/country-banners/south-africa.png');
     }
   }
 
