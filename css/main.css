@@ -713,6 +713,8 @@ section.head {
     background-image: url("/assets/images/about-header.jpg"); }
   section.head#methodology {
     background-image: url("/assets/images/methodology-header.jpg"); }
+  section.head#country-rating-changes {
+    background-image: url("/assets/images/country-rating-changes-header.jpg"); }
   section.head#civic-space {
     background-image: url("/assets/images/covid-civic-space-header.jpg"); }
   section.head#in-numbers {

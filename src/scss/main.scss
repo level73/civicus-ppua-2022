@@ -680,16 +680,17 @@ section.head {
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
-
   h1 {
     display: none;
   }
-
   &#about {
     background-image: url('/assets/images/about-header.jpg');
   }
   &#methodology {
     background-image: url('/assets/images/methodology-header.jpg');
+  }
+  &#country-rating-changes {
+    background-image: url('/assets/images/country-rating-changes-header.jpg');
   }
   &#civic-space {
     background-image: url('/assets/images/covid-civic-space-header.jpg');
