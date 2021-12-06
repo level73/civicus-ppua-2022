@@ -187,7 +187,7 @@ p { font-family: 'Calibri', sans-serif; font-size: 1.2em; }
   img { max-width: 100%; text-align: left; }
   figcaption {  font-size: 0.75em; text-transform: uppercase;  font-family: 'Novecento wide', sans-serif; font-weight: normal; font-style: italic; text-align: center; }
 }
-.content { background-color: white; }
+.content { background-color: white; padding-bottom: 30px; }
 
 footer { padding: 40px 0px 0px;  }
 
@@ -309,7 +309,9 @@ footer { padding: 40px 0px 0px;  }
 /** New Styles 2022 */
 html, body { height: 100%; }
 footer#page-footer {
-  background: #ccc;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(46,46,46,0.74);
+  box-shadow: 0px 0px 15px 3px rgba(46,46,46,0.74);
+  background: white;
   #footer-monitor-traffic {
     display: flex;
     align-items: center;
@@ -317,10 +319,10 @@ footer#page-footer {
    // margin-bottom: 20px;
   }
   .monitor-traffic {
-    width: 60px;
-    height: 60px;
+    width: 42px;
+    height: 42px;
     margin: 20px 5px;
-    border-radius: 30px;
+    border-radius: 21px;
     transition: all 0.3s ease-in-out;
     &.light-1 { background-color: $bg_Red; }
     &.light-2 { background-color: $bg_Orange; }
@@ -339,13 +341,14 @@ footer#page-footer {
     #hp-link {
       padding: 20px 0px 30px;
     }
-    background: #ccc;
+    background: white;
     padding-top: 30px;
     padding-bottom: 40px;
     a.footer-grid {
       display: block;
       width: 100%;
-      min-height: 130px;
+      //min-height: 240px;
+      padding-top: 39%;
       margin: 10px 0px;
       text-align: center;
       background-size: cover;
@@ -361,7 +364,7 @@ footer#page-footer {
       &.top-violations { background-image: url('/assets/images/top-violations-header.jpg');}
       &.recommendations { background-image: url('/assets/images/recommendations-header.jpg');}
       &.about { background-image: url('/assets/images/about-header.jpg');}
-      &.in-numbers { background-image: url('/assets/images/in-numbers-header.jpg');}
+      &.rating-changes { background-image: url('/assets/images/country-rating-changes-header.jpg');}
     }
   }
   #colophon {
@@ -466,7 +469,7 @@ h1.main-title {
 
   position: relative;
   max-height: 268vh;
-  padding-top: 136%;
+  padding-top: 132%;
 
   #country-rating-changes {
     display: block;
@@ -606,7 +609,9 @@ body.region-page, body.page {
   .region-page h2 {padding-top: 90px; }
 
   p.synopsis { font-size: 1.6em; line-height: 150%; text-align: center; margin-bottom: 30px; padding: 0 25px; }
-  img.top-5-img { max-width: 60%; height: auto; text-align: right; float: right; }
+  img.top-5-img { max-width: 60%; height: auto; text-align: right; float: right; margin-left: 15px;
+    &.ral { float: left; max-width: 50%; margin-right: 15px;  margin-left: 0px; }
+  }
 .embed-responsive-map { margin-bottom: 30px; }
 .embed-responsive-map::before {
   padding-top: 32%;
@@ -626,8 +631,8 @@ section.container, article {
 
 .country-banner {
   color: white;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 15vh;
+  padding-bottom: 25vh;
   margin-bottom: 30px;
   &#belarus-header {
     background: url('/assets/images/country-banners/belarus.png') no-repeat center center;
@@ -848,3 +853,10 @@ section.head {
 #world-map { background: $backblack; }
 
 #main-navbar.sticky-top { z-index: 1030; }
+
+.row.pdg div { margin-top: 15px; margin-bottom: 15px; }
+
+.date { display: block; margin: 15px auto 30px; font-size: 1.4em; font-family: "Novecento wide", sans-serif; font-weight: 300; text-align: center; text-transform: uppercase; }
+
+#regional-sim-diff { border-top: 1px solid #ccc; h2 {  padding-top: 20px;  } }
+body.region-page .content-section { padding-bottom: 20px; }
