@@ -259,20 +259,24 @@ footer {
 
 /** Navbar **/
 .menu-toggler {
-  width: 96px;
+  width: 48px;
   height: auto; }
+  @media (min-width: 576px) {
+    .menu-toggler {
+      width: 96px;
+      height: auto; } }
 
 .navbar-toggler {
   z-index: 1020; }
 
 .navbar-collapse {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 20px;
   position: absolute;
   top: 0px;
   left: 0;
-  padding-left: 15px;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  padding-top: 90px;
   max-width: 75%;
   z-index: 1010;
   min-height: 100vh;
@@ -281,6 +285,12 @@ footer {
   -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
   box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5); }
+  @media (min-width: 576px) {
+    .navbar-collapse {
+      padding-left: 15px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+      padding-top: 90px; } }
 
 .navbar-collapse.collapsing {
   height: auto;
@@ -471,7 +481,10 @@ nav#main-navbar {
       text-transform: uppercase; }
     nav#main-navbar ul#languages {
       padding-top: 20px;
-      padding-bottom: 20px; }
+      padding-bottom: 10px; }
+      @media (min-width: 576px) {
+        nav#main-navbar ul#languages {
+          padding-bottom: 20px; } }
       nav#main-navbar ul#languages li {
         display: inline-block;
         width: 33%;
@@ -482,7 +495,10 @@ nav#main-navbar {
     nav#main-navbar ul li > ul {
       padding-left: 10px; }
     nav#main-navbar ul#full-nav li {
-      padding: 4px 0px; }
+      font-size: 1em; }
+      @media (min-width: 576px) {
+        nav#main-navbar ul#full-nav li {
+          padding: 4px 0px; } }
 
 /** Homepage **/
 #homepage {

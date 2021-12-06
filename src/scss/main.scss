@@ -193,18 +193,26 @@ footer { padding: 40px 0px 0px;  }
 
 /** Navbar **/
 .menu-toggler {
-  width: 96px; height: auto;
+  width: 48px; height: auto;
+
+  @media (min-width: 576px){
+    width: 96px; height: auto;
+  }
 }
 
   .navbar-toggler { z-index: 1020; }
+
+
+
   .navbar-collapse {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 20px;
     position: absolute;
     top: 0px;
     left: 0;
-    padding-left: 15px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    padding-top: 90px;
+
     max-width: 75%;
     z-index: 1010;
     min-height: 100vh;
@@ -213,8 +221,20 @@ footer { padding: 40px 0px 0px;  }
     -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow:    1px 0px 5px 0px rgba(50, 50, 50, 0.5);
     box-shadow:         1px 0px 5px 0px rgba(50, 50, 50, 0.5);
+
+    @media(min-width: 576px){
+
+      padding-left: 15px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+      padding-top: 90px;
+
+    }
   }
-  .navbar-collapse.collapsing {
+
+
+
+.navbar-collapse.collapsing {
     height: auto;
     -webkit-transition: left 0.8s ease;
     -o-transition: left 0.8s ease;
@@ -397,7 +417,10 @@ nav#main-navbar {
     padding: 0px;
     a { color: white; font-family: 'Novecento wide', sans-serif; text-transform: uppercase;  }
     &#languages {
-      padding-top: 20px; padding-bottom: 20px;
+      padding-top: 20px; padding-bottom: 10px;
+      @media(min-width: 576px){
+        padding-bottom: 20px;
+      }
       li {
         display: inline-block;
         width: 33%;
@@ -413,7 +436,10 @@ nav#main-navbar {
     }
     &#full-nav {
       li {
-        padding: 4px 0px;
+        font-size: 1em;
+        @media(min-width: 576px) {
+          padding: 4px 0px;
+        }
       }
     }
   }
