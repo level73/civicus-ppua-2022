@@ -824,4 +824,7 @@ section.head {
 #world-map {
   background: #242424; }
 
+#main-navbar.sticky-top {
+  z-index: 1030; }
+
 /*# sourceMappingURL=main.css.map */
