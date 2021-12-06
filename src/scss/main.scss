@@ -309,12 +309,12 @@ footer { padding: 40px 0px 0px;  }
 /** New Styles 2022 */
 html, body { height: 100%; }
 footer#page-footer {
-  background: white;
+  background: #ccc;
   #footer-monitor-traffic {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+   // margin-bottom: 20px;
   }
   .monitor-traffic {
     width: 60px;
@@ -514,7 +514,7 @@ h1.main-title {
 
 }
 /** Region Pages **/
-body.region-page {
+body.region-page, body.page {
   position: relative;
   &.bg-red {
     background-color: $bg_Red;
