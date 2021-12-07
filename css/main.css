@@ -887,4 +887,10 @@ body.region-page .content-section {
     font-weight: bold;
     text-align: center; }
 
+.lang-link-modal a {
+  color: #e6761e; }
+  .lang-link-modal a:hover {
+    text-decoration: underline;
+    color: #e6761e; }
+
 /*# sourceMappingURL=main.css.map */

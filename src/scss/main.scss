@@ -915,3 +915,5 @@ body.region-page .content-section { padding-bottom: 20px; }
     text-align: center;
   }
 }
+
+.lang-link-modal a { color: $bg_Orange; &:hover { text-decoration: underline; color: $bg_Orange; }}
