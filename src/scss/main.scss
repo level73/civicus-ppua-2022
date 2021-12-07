@@ -886,3 +886,22 @@ section.head {
 
 #regional-sim-diff { border-top: 1px solid #ccc; h2 {  padding-top: 20px;  } }
 body.region-page .content-section { padding-bottom: 20px; }
+
+#footnotes {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  color: #1b1e21;
+  font-size: 12px;
+}
+
+#previous-reports {
+  margin-bottom: 80px;
+  h1 { margin-bottom: 40px; }
+  figcaption {
+    display: block;
+    font-family: "Novecento wide", sans-serif;
+    padding: 5px 0px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
