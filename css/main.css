@@ -505,8 +505,6 @@ nav#main-navbar {
   background: url("../assets/images/homepage-animation-full.gif") center top, url("../assets/images/homepage-background.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat; }
-  #homepage .menu-toggler {
-    margin-top: 40px; }
 
 h1.main-title {
   mix-blend-mode: screen;
@@ -528,9 +526,6 @@ h1.main-title {
   position: relative;
   background: url("../assets/images/map/full-color.png");
   background-size: cover; }
-  @media (max-width: 576px) {
-    #main-map {
-      margin-top: 48px; } }
   #main-map.americas {
     background: url("../assets/images/map/americas.png"), url("../assets/images/map/full.png");
     background-size: cover; }
@@ -549,11 +544,16 @@ h1.main-title {
   #main-map #dummymap {
     opacity: 0;
     width: 100%; }
+    @media (max-width: 576px) {
+      #main-map #dummymap {
+        height: 19vh; } }
 
 #interactives {
   position: relative;
-  max-height: 268vh;
-  padding-top: 132%; }
+  padding-top: 167%; }
+  @media (min-width: 576px) {
+    #interactives {
+      padding-top: 132%; } }
   #interactives #country-rating-changes {
     display: block;
     position: absolute;
@@ -604,11 +604,10 @@ body.region-page, body.page {
   body.region-page.bg-opengreen, body.page.bg-opengreen {
     background-color: #2ca867; }
   body.region-page section.head, body.page section.head {
-    height: 0;
-    padding-top: calc(39.87% - 30px);
+    padding-top: 39.87%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center 30px;
     background-attachment: fixed; }
     body.region-page section.head h1, body.page section.head h1 {
       display: none; }
@@ -725,11 +724,10 @@ section.container a, article a {
 
 /** other headers **/
 section.head {
-  height: 0;
-  padding-top: calc(39.87% - 30px);
+  padding-top: 39.87%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 30px;
   background-attachment: fixed; }
   section.head h1 {
     display: none; }

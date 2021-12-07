@@ -450,7 +450,9 @@ nav#main-navbar {
   background-size: cover;
   background-repeat: no-repeat;
 
-  .menu-toggler { margin-top: 40px; }
+  .menu-toggler {
+    // margin-top: 40px;
+     }
 }
 h1.main-title {
   mix-blend-mode: screen;
@@ -468,11 +470,12 @@ h1.main-title {
   @media (min-width: 768px){
     display: block;
   }
+
 }
 
 #main-map {
   @media (max-width: 576px){
-    margin-top: 48px;
+    //margin-top: 30px;
   }
   position: relative;
   background: url('../assets/images/map/full-color.png');
@@ -487,6 +490,10 @@ h1.main-title {
   #dummymap {
     opacity: 0;
     width: 100%;
+    @media(max-width: 576px){
+      height: 19vh;
+    }
+
   }
 
 
@@ -494,8 +501,11 @@ h1.main-title {
 #interactives {
 
   position: relative;
-  max-height: 268vh;
-  padding-top: 132%;
+  //max-height: 268vh;
+  padding-top: 167%;
+  @media(min-width: 576px){
+    padding-top: 132%;
+  }
 
   #country-rating-changes {
     display: block;
@@ -566,11 +576,11 @@ body.region-page, body.page {
   }
 
   section.head {
-    height: 0;
-    padding-top: calc(39.87% - 30px);
+    //height: 0;
+    padding-top: 39.87% ;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center 30px;
     background-attachment: fixed;
 
     h1 {
@@ -705,11 +715,11 @@ section.container, article {
 }
 /** other headers **/
 section.head {
-  height: 0;
-  padding-top: calc(39.87% - 30px);
+  //height: 0;
+  padding-top: 39.87%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 30px;
   background-attachment: fixed;
   h1 {
     display: none;
