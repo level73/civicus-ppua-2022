@@ -1,0 +1,63 @@
+var baseURL = location.protocol + '//' + location.host;
+var iframeString = "<iframe src='%url%' width='100%' height='672' allowfullscreen frameborder='0'></iframe>";
+
+$(function(){
+  console.log('Widget Show/Hide');
+
+
+  if( $('.map-embedder').length > 0 ){
+    $('#map-embed-toggle').click(function(e){
+      if($('.map-embed').hasClass('hide')){
+        $('.map-embed').removeClass('hide');
+        $(this).text('Hide Map Embed');
+      }
+      else {
+        $(this).text('Embed Map </> ');
+        $('.map-embed').addClass('hide');
+      }
+    });
+
+    $('#map-embed-copy').click(function(e){
+      $('#map-embed-code').select();
+      document.execCommand('copy');
+      $(this).text('Embed code copied!');
+    });
+  }
+
+  $('#map-embed-countries').on('change', function(e){
+    $('select#map-embed-regions').val(0);
+    $('select#map-embed-subregions').val(0);
+    var optionSelected = $('option:selected', this);
+    var optionValue = this.value;
+    if(optionValue=='world'){
+      var iframeUrl = baseURL + '/widgets/world'
+    }
+    else {
+      var iframeUrl = baseURL + '/widgets/country_map/' + optionValue + '/';
+    }
+    var newIframeString = iframeString.replace("%url%", iframeUrl);
+    $('input#map-embed-code').val(newIframeString);
+
+  });
+  $('#map-embed-regions').on('change', function(e){
+    $('select#map-embed-countries').val(0);
+    $('select#map-embed-subregions').val(0);
+    var optionSelected = $('option:selected', this);
+    var optionValue = this.value;
+    var iframeUrl = baseURL + '/widgets/region_map/' + optionValue + '/';
+    var newIframeString = iframeString.replace("%url%", iframeUrl);
+    $('input#map-embed-code').val(newIframeString);
+
+  });
+
+  $('#map-embed-subregions').on('change', function(e){
+    $('select#map-embed-countries').val(0);
+    $('select#map-embed-regions').val(0);
+    var optionSelected = $('option:selected', this);
+    var optionValue = this.value;
+    var iframeUrl = baseURL + '/widgets/subregion_map/' + optionValue + '/';
+    var newIframeString = iframeString.replace("%url%", iframeUrl);
+    $('input#map-embed-code').val(newIframeString);
+
+  });
+});

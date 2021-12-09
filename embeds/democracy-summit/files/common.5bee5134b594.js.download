@@ -1,0 +1,17 @@
+$(function() {
+    var $search_toggle = $('#search_bar input');
+    var $search_bar = $('#search_bar');
+    var $primary_nav = $('.primary-nav__holder');
+
+    $search_toggle.on('focus', function(e){
+        $search_bar.addClass('expanded');
+        $primary_nav.addClass('expanded-search');
+    });
+
+    $('body').on('click', function(event){
+        if (!$(event.target).closest('#search_bar').length) {
+            $search_bar.removeClass('expanded');
+            $primary_nav.removeClass('expanded-search');
+        }
+    })
+})

@@ -1,0 +1,64 @@
+/* global $ */
+
+$(function() {
+    'use strict';
+    var $container = $('.map-countries-list').isotope({
+        itemSelector: 'li'
+    });
+
+    $('.search-filter').click(function(e) {
+        e.stopPropagation();
+        $('.map-filters').toggleClass('show');
+        $(this).toggleClass('active');
+    });
+
+    $('.search').keyup(function() {
+        if ($(this).val().length > 0) {
+            filter_countries($(this).val());
+        }
+    });
+    $('.filter_search_form').submit(function(e) {
+        e.preventDefault();
+        filter_countries($('.search').val());
+    });
+
+    $('.grid').isotope({
+        itemSelector: '.content-block',
+        percentPosition: true,
+        transitionDuration: 0,
+        masonry: {
+            columnWidth: '.content-block'
+        }
+    });
+
+    $('.show-country-list').on('click', function(e) {
+        e.preventDefault();
+        $('.map-countries-list-holder').removeClass('hidden');
+        $container.isotope({
+            filter: '*'
+        });
+    });
+
+    $('.country-filter').on('click', function(e) {
+        e.preventDefault();
+        $('.map-countries-list-holder').removeClass('hidden');
+        var filterValue = $(this).attr('data-filter');
+        var filter_letter = '.' + filterValue;
+        $container.isotope({
+            filter: filter_letter
+        });
+    });
+
+    function filter_countries(val) {
+        $('.map-countries-list-holder').removeClass('hidden');
+        $('.map-countries-list').isotope({
+            filter: function() {
+                var countries_to_filter = $(this)
+                    .find('.country_name')
+                    .text();
+                var regx = new RegExp('^' + val, 'i');
+                return countries_to_filter.match(regx);
+            }
+        });
+    }
+});

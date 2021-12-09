@@ -1,0 +1,17 @@
+$(function() {
+    'use strict';
+
+    var body = $('body');
+    var lightbox = $('#lightbox');
+    var lightbox_content = $('#lightbox_content');
+    var lightbox_backdrop = $('#lightbox_backdrop');
+
+    lightbox_backdrop.on('click', function() {
+        body.removeClass('lightbox-open');
+        lightbox.addClass('lightbox_fadeout');
+        setTimeout(function(){
+            lightbox.removeClass('lightbox_visible lightbox_fadeout');
+            lightbox_content.empty();
+        }, 500);
+    });
+});

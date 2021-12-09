@@ -1,0 +1,77 @@
+var map;
+var country_status = ['Closed','Repressed','Obstructed','Narrowed','Open','Rating under review'];
+var map_container = document.getElementById('map-container');
+
+function Datamap() {
+    this.$container = $("#map-container");
+    this.instance = new Datamaps({
+      element: map_container,
+      // Colors for status.
+      fills: {
+          '6': '#333333',
+          '5': '#009d5c',
+          '4': '#acaf3d',
+          '3': '#f6ab17',
+          '2': '#e46c16',
+          '1': '#e71d26',
+          defaultFill: '#333333'
+      },
+      // COuntries codes.
+      data: COUNTRIES_DATA,
+      geographyConfig: {
+          dataUrl: WORLD_TOPO_JSON,
+          scope: 'world',
+          hideAntarctica: true,
+          hideHawaiiAndAlaska : false,
+          borderWidth: 1,
+          borderOpacity: 1,
+          borderColor: '#242424',
+          popupTemplate: function(geography, data) { // This function should just return a string
+          if(data && data.fillKey) {
+              return geography.properties.name+ '<br/><span class="rating' + data.fillKey + '">' +country_status[data.fillKey - 1] + '</span>';
+          } else {
+              return geography.properties.name;
+          }
+          },
+          popupOnHover: true, // True to show the popup while hovering
+          highlightOnHover: false
+      },
+      responsive: true,
+      setProjection: function(element) {
+          var projection = d3.geo.robinson()
+              .scale(window.state.scale)
+              .translate([window.state.position_x, window.state.position_y])
+              .precision(0.1);
+          var path = d3.geo.path()
+              .projection(projection);
+          return {
+          path: path,
+          projection: projection
+      };
+      },
+      done: this._handleMapReady.bind(this)
+  })
+}
+
+
+Datamap.prototype._handleMapReady = function(datamap) {
+    this.zoom = new Zoom({
+      $container: this.$container,
+      datamap: datamap
+    });
+}
+
+window.onload = function() {
+    var initial_scale = map_container.offsetWidth / 5.8;
+    var intitial_magnification = 100;
+
+    window.state = {
+        scale: initial_scale,
+        position_x: map_container.offsetWidth / 2.2,
+        position_y: map_container.offsetHeight / 1.75,
+        magnification: intitial_magnification,
+        drag: {}
+    };
+
+    map = new Datamap();
+}

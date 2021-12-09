@@ -1,0 +1,98 @@
+$( document ).ready(function() {
+    var timeline = $('.status-timeline');
+    var carousel = $('#latest-updates-carousel');
+
+    carousel.flickity({
+        'initialIndex': 1,
+        'wrapAround': false,
+        'prevNextButtons': false,
+        'contain': false,
+        'percentPosition': true,
+        'autoPlay': 3000
+    });
+
+    if (timeline.length === 0) {
+        return;
+    }
+    var timeline_holder = $('.status-timeline-holder');
+    var timeline_width = timeline.outerWidth();
+    var button = $('.prev, .next');
+    var pips = $('.status-timeline').children('li');
+    var pip_count = pips.length;
+    var active_pip = $('.active.pip');
+    var position = 0;
+    if (active_pip.offset() !== undefined) {
+        position = active_pip.offset().left;
+    }
+    var transform;
+    var active_country = '';
+
+    carousel.on('select.flickity', function() {
+        selected_slide();
+    });
+    $('.carousel-control.next').click(function(e) {
+        carousel.flickity('stopPlayer');
+        carousel.flickity('next');
+        return false;
+    });
+    $('.carousel-control.prev').click(function(e) {
+        carousel.flickity('stopPlayer');
+        carousel.flickity('previous');
+        return false;
+    });
+    $('.pip').click(function(e) {
+        carousel.flickity('stopPlayer');
+        carousel.flickity('select', $(this).data().slide);
+        return false;
+    });
+
+    function selected_slide() {
+        var flkty = carousel.data('flickity');
+        if (flkty.selectedElement !== undefined && flkty.selectedIndex !== undefined) {
+            pulse_country($(flkty.selectedElement).data().country);
+            update_pips(flkty.selectedIndex);
+        }
+    }
+
+    function update_pips(selected_index) {
+        pips.removeClass('active');
+        $(pips[selected_index]).addClass('active');
+        update_pips_position();
+    }
+
+    function update_pips_position() {
+        active_pip = $('.active.pip');
+        pip_width = (active_pip.width() / 2);
+        timeline_holder_width = timeline_holder.width() / 2;
+        offset = active_pip.offset().left - timeline.offset().left;
+        position = timeline_holder_width - offset - pip_width;
+        transform = "translateX(" + position + "px)";
+        timeline.css({
+            transform: transform
+        });
+    }
+
+    function pulse_country(iso) {
+        if (iso === undefined || !map) {
+            return;
+        }
+        var temp_class;
+        var country = map.instance.svg.selectAll('path.' + iso);
+        try {
+            temp_class = country.attr('class');
+        } catch(err) {
+            return false;
+        }
+        if(iso !== active_country) {
+            if(active_country !== '') {
+                var old = map.instance.svg.selectAll('path.' + active_country);
+                var old_class = old.attr('class');
+                old.attr('class', old_class.substring(0,22));
+            }
+            country.attr("class", temp_class + " active-country").attr();
+            active_country = iso;
+        }
+    }
+
+    selected_slide();
+});
