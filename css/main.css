@@ -526,6 +526,9 @@ h1.main-title {
   position: relative;
   background: url("../assets/images/map/full-color.png");
   background-size: cover; }
+  @media (max-width: 576px) {
+    #main-map {
+      background-position: center center; } }
   #main-map.americas {
     background: url("../assets/images/map/americas.png"), url("../assets/images/map/full.png");
     background-size: cover; }
@@ -546,11 +549,12 @@ h1.main-title {
     width: 100%; }
     @media (max-width: 576px) {
       #main-map #dummymap {
-        height: 19vh; } }
+        height: 23vh; } }
 
 #interactives {
   position: relative;
-  padding-top: 167%; }
+  min-height: 100vh;
+  padding-top: 132%; }
   @media (min-width: 576px) {
     #interactives {
       padding-top: 132%; } }
