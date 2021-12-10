@@ -917,3 +917,7 @@ body.region-page .content-section { padding-bottom: 20px; }
 }
 
 .lang-link-modal a { color: $bg_Orange; &:hover { text-decoration: underline; color: $bg_Orange; }}
+// nav scroll thing
+.nav-container { height: 100vh;  position: relative; overflow-y: scroll;  -ms-overflow-style: none; scrollbar-width: none;
+&::-webkit-scrollbar { width: 0 !important }
+}

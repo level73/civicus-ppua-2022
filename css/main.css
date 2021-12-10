@@ -893,4 +893,13 @@ body.region-page .content-section {
     text-decoration: underline;
     color: #e6761e; }
 
+.nav-container {
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  .nav-container::-webkit-scrollbar {
+    width: 0 !important; }
+
 /*# sourceMappingURL=main.css.map */
